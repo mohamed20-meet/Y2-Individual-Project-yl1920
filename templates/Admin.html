@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/home.css">
+<style>
+body {
+  background-image: url('../static/background.jpg');
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="{{url_for('home')}}">Home</a></li>
+  <li><a href="{{url_for('Admin')}}">Admin</a></li>
+  <li><a href="{{url_for('Esports')}}">Esports</a></li>
+</ul>
+<form action="/Admin" method="post">
+
+  <div class="container">
+    <label for="uname"><b class="color">Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b class="color">Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+<img src="https://media.giphy.com/media/xTk9ZDxBnbfAtVotIQ/giphy.gif" alt="Shawerma" style="width:150px;height:150px;">
+
+  <div class="container" style="background-color:#f1f1f1">
+  </div>
+</form>
+</body>
+</html>

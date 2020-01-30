@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="../static/home.css">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="{{url_for('home')}}">Home</a></li>
+  <li><a href="{{url_for('Admin')}}">Admin</a></li>
+  <li><a href="{{url_for('Esports')}}">Esports</a></li>
+</ul>
+
+<div id="al">
+  <h1 id="alo">Esports</h1>
+  <div class="line"></div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p id="aloo"> BEST TEAMS</p>
+<div class="container">
+  <div class="row">
+    <div class="col-6 ma">
+      <img src="../static/faze.jpg" alt="FaZe" height="100" width="100">
+      FaZe Clan is an American esports and entertainment organization that competes in various video game tournaments. The organization was founded as a gaming clan on YouTube by players known as Housecat, ClipZ, and Resistance in 2010.
+      
+    </div>
+    <div class="col-6 mo">
+      <img src="../static/liq.png" alt="Liquid" height="100" width="100">
+      Team Liquid is a multi-regional professional esports organization based in the Netherlands that was founded in 2000. With the release of StarCraft II: Wings of Liberty, Team Liquid signed their first professional players.
+
+    </div>
+  </div>
+
+</body>
+</html>

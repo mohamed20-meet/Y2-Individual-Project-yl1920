@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../static/home.css">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+
+
+<ul>
+  <li><a class="active" href="{{url_for('home')}}">Home</a></li>
+  <li><a href="{{url_for('Admin')}}">Admin</a></li>
+  <li><a href="{{url_for('Esports')}}">Esports</a></li>
+</ul>
+<font size="20"><center> Game</center></font>
+
+<form action = "/edit" method = "post">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+          <select name = "Team1">
+            <option value="Faze">faze.png</option>
+            <option value="saab">Saab</option>
+            <option value="Liq">liq</option>
+            <option value="audi">Audi</option>
+          </select>
+        <img src="../static/Faze.jpg" alt="Faze" height="70" width="70">
+
+      </div>
+      <div class="col-6 mo">
+          <select name = "Team2">
+            <option value="liq">liq.png</option>
+            <option value="faze">Faze</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        <img src="../static/liq.png" alt="liq" height="70" width="70">
+      </div>
+      <button type="submit">sumbit</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
